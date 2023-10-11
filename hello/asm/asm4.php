@@ -84,7 +84,6 @@ function errorMessage($key, $error)
             <div class="form-group">
                 <label for="address">Địa Chỉ:</label>
                 <input type="text" class="form-control" id="address" name="address">
-                <!-- <p style="color:red"><?php echo errorMessage('address',$error) ?> </p> -->
             </div>
             <div class="form-group">
                 <label for="password">Mật Khẩu:</label>
