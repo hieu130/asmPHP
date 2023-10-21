@@ -147,7 +147,11 @@ function errorMessage($key, $error)
             </div>
             <div class="form-group">
                 <label for="address">Địa Chỉ:</label>
+<<<<<<< HEAD
                 <input type="text" class="form-control" id="address" name="address" value="<?php echo $address ?>">
+=======
+                <input type="text" class="form-control" id="address" name="address">
+>>>>>>> db5ab25ef14e7dbd95fb4bd3a18b2549b1cb66d3
             </div>
             <div class="form-group">
                 <label for="password">Mật Khẩu:</label>
