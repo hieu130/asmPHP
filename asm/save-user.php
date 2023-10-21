@@ -26,11 +26,15 @@ $password = $_POST['password'];
 // Insert dữ liệu vào bảng users
     $sql = "INSERT INTO users (id, name, email, address, birthday, password) 
     VALUES ('$id','$name', '$email', '$address', '$birthday', '$password')";
-    // $conn->prepare($sql);
     if ($conn->query($sql) === TRUE) {
-        echo "Thêm dữ liệu thành công";
+        echo "<h2>Thêm dữ liệu thành công</h2>";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
+    echo "Tên: $name<br>";
+    echo "Email: $email<br>";
+    echo "Địa chỉ: $address<br>";
+    echo "Ngày sinh: $birthday<br>";
+
 $conn ->close();
 ?>
