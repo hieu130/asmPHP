@@ -13,7 +13,7 @@ $fullname = null;
 $email = null;
 $phone = null;
 $dob = null;
-// $address = null;
+$address = null;
 $password = null;
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -64,32 +64,31 @@ function errorMessage($key, $error)
             <div class="form-group">
                 <label for="fullname">Họ và Tên:</label>
                 <input type="text" class="form-control" id="fullname" name="fullname">
-                <p style="color:red"><?php echo errorMessage('fullname',$error) ?> </p>
+                <p style="color:red"><?php echo errorMessage('fullname', $error) ?> </p>
             </div>
             <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="email" class="form-control" id="email" name="email">
-                <p style="color:red"><?php echo errorMessage('email',$error) ?> </p>
+                <p style="color:red"><?php echo errorMessage('email', $error) ?> </p>
             </div>
             <div class="form-group">
                 <label for="phone">Số Điện Thoại:</label>
                 <input type="tel" class="form-control" id="phone" name="phone">
-                <p style="color:red"><?php echo errorMessage('phone',$error) ?> </p>
+                <p style="color:red"><?php echo errorMessage('phone', $error) ?> </p>
             </div>
             <div class="form-group">
                 <label for="dob">Ngày Tháng Năm Sinh:</label>
                 <input type="date" class="form-control" id="dob" name="dob">
-                <p style="color:red"><?php echo errorMessage('dob',$error) ?> </p>
+                <p style="color:red"><?php echo errorMessage('dob', $error) ?> </p>
             </div>
             <div class="form-group">
                 <label for="address">Địa Chỉ:</label>
                 <input type="text" class="form-control" id="address" name="address">
-                <!-- <p style="color:red"><?php echo errorMessage('address',$error) ?> </p> -->
             </div>
             <div class="form-group">
                 <label for="password">Mật Khẩu:</label>
                 <input type="password" class="form-control" id="password" name="password">
-                <p style="color:red"><?php echo errorMessage('password',$error) ?> </p>
+                <p style="color:red"><?php echo errorMessage('password', $error) ?> </p>
             </div>
             <button type="submit" class="btn btn-primary">Đăng Ký</button>
         </form>
@@ -119,15 +118,15 @@ function errorMessage($key, $error)
                 </thead>
                 <tbody>
                     <?php
-                    
+
                     // Hiển thị dữ liệu trong bảng
-                        echo "<tr>";
-                        echo "<td>$fullname</td>";
-                        echo "<td>$email</td>";
-                        echo "<td>$phone</td>";
-                        echo "<td>$dob</td>";
-                        echo "<td>$address</td>";
-                        echo "</tr>";
+                    echo "<tr>";
+                    echo "<td>$fullname</td>";
+                    echo "<td>$email</td>";
+                    echo "<td>$phone</td>";
+                    echo "<td>$dob</td>";
+                    echo "<td>$address</td>";
+                    echo "</tr>";
                     ?>
                 </tbody>
             </table>
